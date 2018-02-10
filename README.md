@@ -1,6 +1,6 @@
 # My Debian 9 (Stretch) Setup
 
-This is my nimble computer setup - a very lightweight Debian 9.3 (stretch) installation with Openbox and other cool little tweaks.
+This is my nimble computer setup - a very lightweight Debian 9.3 (Stretch) installation with Openbox and cool tweaks.
 
 It has been configured on a [Dell Inspiron 11 3000 (Pentium N3710 Quad-Core) laptop](http://www.dell.com/au/p/inspiron-11-3162-laptop/pd?oc=z511231au&model_id=inspiron-11-3162-laptop).
 
@@ -34,13 +34,15 @@ It has been configured on a [Dell Inspiron 11 3000 (Pentium N3710 Quad-Core) lap
 
 `Super Key (Win Key) + Alt + Left` - Snaps window to the left at 50% width and 50% height
 
+`Super Key (Win Key) + Alt + 1-8` - Window Tiling at 25% width and 50% height
+
 ## Install Debian Stretch
 
 Go to the [Debian downloads](https://www.debian.org/CD/netinst/) and grab the latest amd64 NetInstall.
 
 Once downloaded, open up terminal and make a bootable USB:
 
-    sudo dd bs=4m if=debian-9.1.0-amd64-netinst.iso of=/dev/disk# && sync
+    sudo dd bs=4m if=debian-9.3.0-amd64-netinst.iso of=/dev/disk# && sync
 
 ## Installing Network Tools and Drivers
 

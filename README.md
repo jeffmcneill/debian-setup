@@ -152,14 +152,14 @@ Reboot
 Once you are connected to the internet, upgrade your system and install the packages below:
     
 ```bash
-apt-get update && apt-get upgrade -y && \
-apt-get install aptitude apt-transport-https libnotify-bin xorg xbacklight \
+sudo apt-get update && sudo apt-get upgrade -y && \
+sudo apt-get install aptitude apt-transport-https libnotify-bin xorg xbacklight \
 openbox pulseaudio volumeicon-alsa lightdm obconf obmenu curl xclip p7zip htop \
 rofi nitrogen tint2 viewnior xcompmgr zip thunar thunar-archive-plugin \
 thunar-media-tags-plugin terminator preload lxappearance lxappearance-obconf \
 git gitk autoconf libgtk-3-dev chromium wicd xscreensaver xscreensaver-gl-extra \
 xscreensaver-data-extra simplescreenrecorder simple-scan gnome-disk-utility \
-ack-grep vlc libssl1.0.2 gsimplecal xrandr arandr -y
+ack-grep vlc libssl1.0.2 gsimplecal arandr -y
 ```
 
     reboot

@@ -36,6 +36,12 @@ It has been configured on a [Dell Inspiron 11 3000 (Pentium N3710 Quad-Core) lap
 
 `Super Key (Win Key) + Alt + 1-8` - Window Tiling at 25% width and 50% height
 
+## General Shortcuts
+
+`Super Key (Win Key) + R` - Launches ROFI with application search
+
+`Super Key (Win Key) + C` - Launches ROFI with clipboard history
+
 ## Install Debian Stretch
 
 Go to the [Debian downloads](https://www.debian.org/CD/netinst/) and grab the latest amd64 NetInstall.

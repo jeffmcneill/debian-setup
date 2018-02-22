@@ -20,9 +20,13 @@ xcompmgr &
 tint2 &
 volumeicon &
 greenclip daemon &
+dunstr &
 # xfce4-power-manager &
 
+# Dual Displays
+~/.screenlayout/default.sh
+
 # My wallpaper
-sleep 2s && nitrogen --restore &
+sleep 3s && nitrogen --restore &
 
 xscreensaver -no-splash &

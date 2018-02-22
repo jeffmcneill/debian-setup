@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Arc_OSX</name>
-    <titleLayout>CIML</titleLayout>
+    <name>Mars</name>
+    <titleLayout>LC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -622,7 +622,7 @@
       <mousebind button="Left" action="DoubleClick">
         <action name="ToggleMaximizeFull"/>
       </mousebind>
-<!--       <mousebind button="Up" action="Click">
+      <!--       <mousebind button="Up" action="Click">
         <action name="if">
           <shaded>no</shaded>
           <then>

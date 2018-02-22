@@ -11,4 +11,4 @@ rofi.color-active:                   argb:00282a36, #50fa7b, argb:00373844, #50f
 ! "Color scheme window" Set from: File
 rofi.color-window:                   argb:ee282a36, #282a36, #f4f99d
 ! "Separator style (none, dash, solid)" Set from: File
-rofi.separator-style:                solid
+#include "/usr/share/rofi/themes//DarkBlue.theme"

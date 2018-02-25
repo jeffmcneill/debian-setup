@@ -217,16 +217,6 @@ Remove chromium and install Google Chrome
 
     sudo apt-get update && sudo apt-get remove chromium && sudo apt-get install google-chrome-stable
 
-## Install the ARC Theme
-
-    sudo su
-
-    echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/Debian_8.0/ /' > /etc/apt/sources.list.d/arc-theme.list
-
-    apt-get update && apt-get install arc-theme
-
-    exit
-
 ## Install ARC Icon Theme
 
     git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme

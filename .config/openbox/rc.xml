@@ -310,7 +310,7 @@
       </action>
       <action name="MoveToEdgeSouth"/>
     </keybind>
-    <!-- Grid Windows -->
+    <!-- Window Snapping - Grid Windows -->
     <keybind key="W-1">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">

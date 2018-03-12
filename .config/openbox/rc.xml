@@ -544,7 +544,7 @@
     <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
-        <command>gnome-screenshot -i</command>
+        <command>scrot</command>
       </action>
     </keybind>
   </keyboard>

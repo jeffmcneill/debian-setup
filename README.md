@@ -165,7 +165,7 @@ rofi nitrogen tint2 viewnior xcompmgr zip thunar thunar-archive-plugin \
 thunar-media-tags-plugin terminator preload lxappearance lxappearance-obconf \
 git gitk autoconf libgtk-3-dev chromium wicd xscreensaver xscreensaver-gl-extra \
 xscreensaver-data-extra simplescreenrecorder simple-scan gnome-disk-utility \
-ack-grep vlc libssl1.0.2 gsimplecal arandr gnome-screenshot dunst -y
+ack-grep vlc libssl1.0.2 gsimplecal arandr dunst -y
 ```
 
     reboot

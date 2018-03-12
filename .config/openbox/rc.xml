@@ -477,7 +477,7 @@
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
-        <command>gnome-screenshot -i</command>
+        <command>scrot</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->

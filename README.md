@@ -1,6 +1,6 @@
 # My Debian 9 (Stretch) Setup
 
-This is my nimble computer setup - a very lightweight Debian 9.3 (Stretch) installation with Openbox and cool tweaks.
+This is my nimble computer setup - a very lightweight Debian 9.4 (Stretch) installation with Openbox and cool tweaks.
 
 It has been configured on a [Dell Inspiron 11 3000 (Pentium N3710 Quad-Core) laptop](http://www.dell.com/au/p/inspiron-11-3162-laptop/pd?oc=z511231au&model_id=inspiron-11-3162-laptop).
 
@@ -48,7 +48,7 @@ Go to the [Debian downloads](https://www.debian.org/CD/netinst/) and grab the la
 
 Once downloaded, open up terminal and make a bootable USB:
 
-    sudo dd bs=4m if=debian-9.3.0-amd64-netinst.iso of=/dev/disk# && sync
+    sudo dd bs=4m if=debian-9.4.0-amd64-netinst.iso of=/dev/disk# && sync
 
 ## Installing Network Tools and Drivers
 
@@ -116,42 +116,6 @@ Try pinging google.com `ping google.com`. If it works, you're in business! :)
     # stretch-updates, previously known as 'volatile'
     deb http://ftp.us.debian.org/debian/ stretch-updates main contrib non-free
     deb-src http://ftp.us.debian.org/debian/ stretch-updates main contrib non-free
-
-## Upgrade to Kernel 4.15.2
-
-The current kernel on Debian Stretch 4.9.X doesn't play nicely with `xorg` on this dell laptop, so you will need to upgrade it to a more recent version.
-
-Copy the following files to USB and install them on your machine.
-
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-headers-4.15.2-041502_4.15.2-041502.201802072230_all.deb
-
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-headers-4.15.2-041502-generic_4.15.2-041502.201802072230_amd64.deb
-
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-image-4.15.2-041502-generic_4.15.2-041502.201802072230_amd64.deb
-
-    sudo dpkg -i linux-headers-4.15.2*.deb linux-image-4.15.2*.deb
-
-    systemctl reboot
-
-## Cleaning Up Old Kernels
-  
-Get List of Current Installed Kernels 
-
-    dpkg --list | grep linux-image
-
-Remove Old Kernel Images and Headers
-
-    sudo apt-get purge linux-image-x.x.x-x
-
-    sudo apt-get purge linux-headers-x.x.x-x
-
-Update Bootloader
-
-    sudo update-grub2
-
-Reboot
-
-    sudo reboot
 
 ## Install Packages
 
@@ -379,6 +343,42 @@ Then in Counter Strike Source, open the terminal and run:
 Make Greenclip executable
 
     sudo mv greenclip /usr/bin/
+
+## Upgrade to Kernel 4.15.2 (optional)
+
+The current kernel on Debian Stretch 4.9.X doesn't play nicely with `xorg` on this dell laptop, so you will need to upgrade it to a more recent version.
+
+Copy the following files to USB and install them on your machine.
+
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-headers-4.15.2-041502_4.15.2-041502.201802072230_all.deb
+
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-headers-4.15.2-041502-generic_4.15.2-041502.201802072230_amd64.deb
+
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-image-4.15.2-041502-generic_4.15.2-041502.201802072230_amd64.deb
+
+    sudo dpkg -i linux-headers-4.15.2*.deb linux-image-4.15.2*.deb
+
+    systemctl reboot
+
+## Cleaning Up Old Kernels
+  
+Get List of Current Installed Kernels 
+
+    dpkg --list | grep linux-image
+
+Remove Old Kernel Images and Headers
+
+    sudo apt-get purge linux-image-x.x.x-x
+
+    sudo apt-get purge linux-headers-x.x.x-x
+
+Update Bootloader
+
+    sudo update-grub2
+
+Reboot
+
+    sudo reboot
 
 ## Enjoy your new setup
 

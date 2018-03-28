@@ -348,19 +348,17 @@ Make Greenclip executable
 
     sudo mv greenclip /usr/bin/
 
-## Upgrade to Kernel 4.15.2 (optional)
+## Upgrade to Kernel 4.15.13 (optional)
 
-The current kernel on Debian Stretch 4.9.X doesn't play nicely with `xorg` on this dell laptop, so you will need to upgrade it to a more recent version.
+Download the following files and install them on your machine.
 
-Copy the following files to USB and install them on your machine.
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.13/linux-headers-4.15.13-041513_4.15.13-041513.201803250910_all.deb
 
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-headers-4.15.2-041502_4.15.2-041502.201802072230_all.deb
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.13/linux-headers-4.15.13-041513-generic_4.15.13-041513.201803250910_amd64.deb
 
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-headers-4.15.2-041502-generic_4.15.2-041502.201802072230_amd64.deb
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.13/linux-image-4.15.13-041513-generic_4.15.13-041513.201803250910_amd64.deb
 
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.2/linux-image-4.15.2-041502-generic_4.15.2-041502.201802072230_amd64.deb
-
-    sudo dpkg -i linux-headers-4.15.2*.deb linux-image-4.15.2*.deb
+    sudo dpkg -i linux-headers-4.15.13*.deb linux-image-4.15.13*.deb
 
     systemctl reboot
 

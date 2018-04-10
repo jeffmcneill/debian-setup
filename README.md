@@ -238,21 +238,36 @@ Once you have downloaded and installed sublime, get up to speed with the followi
       }
 
 - Edit User Settings and replace all contents with the following:
+    
+    ```
+    {
+      "bold_folder_labels": true,
+      "color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+      "draw_minimap_border": true,
+      "folder_exclude_patterns":
+      [
+        ".git",
+        "node_modules",
+        "build"
+      ],
+      "font_size": 11,
+      "highlight_line": true,
+      "highlight_modified_tabs": true,
+      "ignored_packages":
+      [
+        "Vintage"
+      ],
+      "line_padding_bottom": 1,
+      "line_padding_top": 1,
+      "save_on_focus_lost": true,
+      "tab_size": 2,
+      "theme": "Adaptive.sublime-theme",
+      "translate_tabs_to_spaces": true,
+      "word_wrap": true,
+      "scroll_past_end": false
+    }
+    ```
 
-      {
-        "bold_folder_labels": true,
-        "draw_minimap_border": true,
-        "font_size": 12,
-        "highlight_line": true,
-        "highlight_modified_tabs": true,
-        "line_padding_bottom": 1,
-        "line_padding_top": 1,
-        "save_on_focus_lost": true,
-        "tab_size": 2,
-        "translate_tabs_to_spaces": true,
-        "word_wrap": true,
-        "folder_exclude_patterns":[".git","node_modules"]
-      }
 
 Enjoy Sublime :)
 

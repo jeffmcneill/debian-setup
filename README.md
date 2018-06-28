@@ -363,17 +363,17 @@ Make Greenclip executable
 
     sudo mv greenclip /usr/bin/
 
-## Upgrade to Kernel 4.17.3 (optional)
+## Upgrade to Kernel 4.15.13 (optional)
 
 Download the following files and install them on your machine.
 
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.17.3/linux-headers-4.17.3-041703_4.17.3-041703.201806252030_all.deb
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.13/linux-headers-4.15.13-041513_4.15.13-041513.201803250910_all.deb
 
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.17.3/linux-headers-4.17.3-041703-generic_4.17.3-041703.201806252030_amd64.deb
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.13/linux-headers-4.15.13-041513-generic_4.15.13-041513.201803250910_amd64.deb
 
-    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.17.3/linux-image-unsigned-4.17.3-041703-generic_4.17.3-041703.201806252030_amd64.deb
+    wget kernel.ubuntu.com/~kernel-ppa/mainline/v4.15.13/linux-image-4.15.13-041513-generic_4.15.13-041513.201803250910_amd64.deb
 
-    sudo dpkg -i linux-headers-4.17.3*.deb linux-image-unsigned-4.17.3*.deb
+    sudo dpkg -i linux-headers-4.15.13*.deb linux-image-4.15.13*.deb
 
     systemctl reboot
 

@@ -20,6 +20,7 @@ xcompmgr &
 tint2 &
 xmodmap  -e "pointer = 1 0 3" &
 volumeicon &
+# xmodmap -e "keycode 112=Home" && xmodmap -e "keycode 117=End" & 
 greenclip daemon &
 dunstr &
 # xfce4-power-manager &

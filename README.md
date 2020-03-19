@@ -1,8 +1,8 @@
-# My Debian 10 (Buster) Setup
+# My Debian 11 Testing (Bullseye) Setup
 
-This is my nimble computer setup - a very lightweight Debian 10.2 (Buster) installation with Openbox and cool tweaks.
+This is my nimble computer setup - a very lightweight Debian 11 Alpha 1 (Bullseye) installation with Openbox and cool tweaks.
 
-It has been configured on a [Dell Inspiron 11 3000 (Pentium N3710 Quad-Core) laptop](http://www.dell.com/au/p/inspiron-11-3162-laptop/pd?oc=z511231au&model_id=inspiron-11-3162-laptop).
+It has been configured on an [Intel NUC Celeron]).
 
 ## Busy
 ![Alt text](desktop-busy.png?raw=true "Desktop Busy")
